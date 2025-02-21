@@ -1,0 +1,743 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 5,
+  "metadata": {
+    "celltoolbar": "Create Assignment",
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8.5"
+    },
+    "colab": {
+      "provenance": []
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "4LGA_xDEAUTN"
+      },
+      "source": [
+        "NAME = \"\"\n",
+        "ID = \"\"\n",
+        "COLLABORATORS_ID = [\"\", \"\"]"
+      ],
+      "id": "4LGA_xDEAUTN",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "nbgrader": {
+          "grade": false,
+          "grade_id": "cell-c5d566a3b1e86c18",
+          "locked": true,
+          "schema_version": 3,
+          "solution": false,
+          "task": false
+        },
+        "id": "M25RSV4i_hfm"
+      },
+      "source": [
+        "# Necessary library import"
+      ],
+      "id": "M25RSV4i_hfm"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": false,
+          "grade_id": "cell-523530dbae7747c4",
+          "locked": true,
+          "schema_version": 3,
+          "solution": false,
+          "task": false
+        },
+        "id": "SbdK7XoC_hfm"
+      },
+      "source": [
+        "import numpy as np\n",
+        "from skimage import io, color, exposure\n",
+        "import matplotlib.pyplot as plt"
+      ],
+      "id": "SbdK7XoC_hfm",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "nbgrader": {
+          "grade": false,
+          "grade_id": "cell-638395480558243f",
+          "locked": true,
+          "schema_version": 3,
+          "solution": false,
+          "task": false
+        },
+        "id": "gsQcXwXd_hfn"
+      },
+      "source": [
+        "# Task 1 - Basic Image Operation"
+      ],
+      "id": "gsQcXwXd_hfn"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "nbgrader": {
+          "grade": false,
+          "grade_id": "cell-7bf101f59e57321e",
+          "locked": true,
+          "schema_version": 3,
+          "solution": false,
+          "task": false
+        },
+        "id": "jPouCOcs_hfn"
+      },
+      "source": [
+        "import your image or any photo taken by you (`sample.jpeg`) as a numpy array, save it in the varaible `I`.\n",
+        "\n",
+        "A picture taken from your phone of any scenary/streets/building is better.\n",
+        "\n",
+        "remember your image name MUST be `sample.jpeg`.\n",
+        "\n",
+        "Make sure the height and the width of the image is **smaller than 1000 pixels**."
+      ],
+      "id": "jPouCOcs_hfn"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-1607bc36e938751e",
+          "locked": false,
+          "points": 1,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "gU4sN_R5_hfo",
+        "outputId": "1e2ac976-8506-4c66-be5d-75f8e648be72"
+      },
+      "source": [
+        "I = None # Replace None with appropriate function call line\n",
+        "\n",
+        "\n",
+        "# find the height and the width of the image\n",
+        "H = None # should contain height\n",
+        "W = None # should contain width\n",
+        "print(\"Height is\", H)\n",
+        "print(\"Width is\", W)\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "gU4sN_R5_hfo",
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Height is None\n",
+            "Width is None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-9b6a6fecbbe2f898",
+          "locked": false,
+          "points": 1,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "tc5UHLgZ_hfq"
+      },
+      "source": [
+        "# Normalize the image so that the gray scales are between 0 and 1. Save it to I and display the image\n",
+        "I = None\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "tc5UHLgZ_hfq",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-1a4bfb4cf5093008",
+          "locked": false,
+          "points": 1,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "STNtWaX1_hfr"
+      },
+      "source": [
+        "# Increase the brightness of the image without changing the contrast.\n",
+        "# Save the resulting image in I_bright and display it.\n",
+        "I_bright = None\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "STNtWaX1_hfr",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-3f0cdc9caabca600",
+          "locked": false,
+          "points": 1,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "S6maHCxJ_hfs"
+      },
+      "source": [
+        "# Decrease the brightness of the image without changing the contrast.\n",
+        "# Save the resulting image in I_dark and display it.\n",
+        "I_dark = None\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "S6maHCxJ_hfs",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-cb0694c7cff2c8b8",
+          "locked": false,
+          "points": 2,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "2s9DaYK6_hfs"
+      },
+      "source": [
+        "# Multiply the three channels of image I with three DIFFERENT numbers between 0.3 and 3\n",
+        "# Save the resulting image in I_tint and display it.\n",
+        "# The resulting image should have some color shift\n",
+        "I_tint = None\n",
+        "\n",
+        "# HINT:\n",
+        "# I_tint = np.zeros(I.shape)\n",
+        "# I_tint[:, :, 0] =  ..... I[:, :, 0].....\n",
+        "# ......\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "2s9DaYK6_hfs",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-b92ef82578edd1ca",
+          "locked": false,
+          "points": 1,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "MF54zsTT_hfs"
+      },
+      "source": [
+        "# Convert the image into a grayscale image.\n",
+        "# Save it to I_gray and display it\n",
+        "I_gray = None\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "MF54zsTT_hfs",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-39f9169d53f9fcf0",
+          "locked": false,
+          "points": 1,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "cTnMwwcX_hft"
+      },
+      "source": [
+        "# Display the negative of the grayscale image\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "cTnMwwcX_hft",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-c1d2bf6163679271",
+          "locked": false,
+          "points": 3,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "KqtNXFEp_hft"
+      },
+      "source": [
+        "# Artificially degrade the **grayscale image** by reducing it contrast\n",
+        "# You can do so by recaling the gray values and concentrating them in a narrow range,\n",
+        "# say between 0.3 and 0.6.\n",
+        "# Save the image as I_degraded and display it\n",
+        "# HINT: SEE lec-4-demo-codes\n",
+        "\n",
+        "I_degraded = None\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "KqtNXFEp_hft",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-a96de370b75a1aa6",
+          "locked": false,
+          "points": 5,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "88o1DyVf_hfu"
+      },
+      "source": [
+        "# Complete the following function to perform Piecewise Linear Contrast stretching\n",
+        "# That is, implement the map shown in Slide 17 of Lecture 3\n",
+        "\n",
+        "# Prototype: piecewise_contrast_stretch(I_gray, r1, r2, s1, s2)\n",
+        "# Assuming both input and output images are normalized between 0 and 1\n",
+        "\n",
+        "def piecewise_contrast_stretch(I, r1, r2, s1, s2):\n",
+        "    pass\n",
+        "    # Write your code here\n",
+        "    I_stretched = None # replace with appropriate code\n",
+        "    return I_stretched\n",
+        "    ### BEGIN SOLUTION\n",
+        "\n",
+        "    ### END SOLUTION\n",
+        "\n"
+      ],
+      "id": "88o1DyVf_hfu",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-a1ec064fedada857",
+          "locked": false,
+          "points": 2,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "flc_hCud_hfu"
+      },
+      "source": [
+        "# To test your implementation, contrast strech the degraded image I_degrade\n",
+        "r1 = None\n",
+        "r2 = None\n",
+        "s1 = None\n",
+        "s2 = None\n",
+        "I_stretched = piecewise_contrast_stretch(I_degraded, r1, r2, s1, s2)\n",
+        "\n",
+        "# Display the strtched image\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "flc_hCud_hfu",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "nbgrader": {
+          "grade": false,
+          "grade_id": "cell-08f74ae2eb7c9fa0",
+          "locked": true,
+          "schema_version": 3,
+          "solution": false,
+          "task": false
+        },
+        "id": "ze1XfeH__hfv"
+      },
+      "source": [
+        "# Task 2 - Histogram and Equalization"
+      ],
+      "id": "ze1XfeH__hfv"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-9ff058088fe4d9c7",
+          "locked": false,
+          "points": 1,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "mYQhKCOJ_hfv"
+      },
+      "source": [
+        "# Plot the Image and its histogram + cdf of the original image I\n",
+        "# Note that it is a color image, so it will have three different histograms\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "mYQhKCOJ_hfv",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-fa3eb9b58b43a438",
+          "locked": false,
+          "points": 1,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "i7yFJ3Xo_hfv"
+      },
+      "source": [
+        "# Plot the Image and its histogram + cdf of the grayscale image I_gray\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "i7yFJ3Xo_hfv",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-053de8e352b6089b",
+          "locked": false,
+          "points": 1,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "vHYI5dPv_hfv"
+      },
+      "source": [
+        "# Plot the Image and its histogram + cdf of the degraded image I_degraded\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "vHYI5dPv_hfv",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-38720b476e22e846",
+          "locked": false,
+          "points": 2,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "oCfjiLNz_hfw"
+      },
+      "source": [
+        "# Equalize the histogram of the degraded image I_degraded\n",
+        "# Save the result in I_recon_gray, display the image along with its histogram\n",
+        "\n",
+        "I_recon_gray = None\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "oCfjiLNz_hfw",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-0cf4a896cbc962ed",
+          "locked": false,
+          "points": 2,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "IH19D2Ve_hfw"
+      },
+      "source": [
+        "# Equalize the histogram of the degraded image I_degraded using AHE\n",
+        "# Save the result in I_recon_gray_2, display the image along with its histogram\n",
+        "\n",
+        "I_recon_gray_2 = None\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "IH19D2Ve_hfw",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-e3bda12c6d07b7ae",
+          "locked": false,
+          "points": 2,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "mPIIrdDk_hfw"
+      },
+      "source": [
+        "# Equalize the histogram of the degraded image I_degraded using CLAHE\n",
+        "# Save the result in I_recon_gray_2, display the image along with its histogram\n",
+        "\n",
+        "I_recon_gray_3 = None\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "mPIIrdDk_hfw",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-ba85e022cee90754",
+          "locked": false,
+          "points": 3,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "r2nnHBmx_hfw"
+      },
+      "source": [
+        "# Artificially degrade the original **RGB image** by reducing it contrast\n",
+        "# You can do so by recaling the values of the L channel (in LAB color space)\n",
+        "# and concentrating them in a narrow range, say between 0.3 and 0.6.\n",
+        "# Save the image as I_rgb_degraded and display it\n",
+        "\n",
+        "I_rgb_degraded = None\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "r2nnHBmx_hfw",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-baa3c3e31a7e94cd",
+          "locked": false,
+          "points": 3,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "iAb3jEqW_hfx"
+      },
+      "source": [
+        "# Equalize the histogram of the degraded color image I_rgb_degraded using CLAHE\n",
+        "# Save the result in I_recon_color, display the image along with its histogram\n",
+        "# HINT: You have to convert to LAB first\n",
+        "# See the lecture and lecture-4-demo-codes\n",
+        "\n",
+        "I_recon_color = None\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "iAb3jEqW_hfx",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "nbgrader": {
+          "grade": false,
+          "grade_id": "cell-f2e6c4f32cfa0861",
+          "locked": true,
+          "schema_version": 3,
+          "solution": false,
+          "task": false
+        },
+        "id": "-usIPvmJ_hfx"
+      },
+      "source": [
+        "# Task 3 - Open Ended\n",
+        " ## ***There are 3 images in the drive directory below. Look at the questions from the brackets [.]. Answer them in the provided text cell at the bottom.***\n",
+        "\n",
+        " ### link:  https://drive.google.com/drive/folders/1ft3XrO-MGxhxL2PfcLCFQjU0wvvlLAv4?usp=sharing"
+      ],
+      "id": "-usIPvmJ_hfx"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "nbgrader": {
+          "grade": true,
+          "grade_id": "cell-12c55c30e4fa7cec",
+          "locked": false,
+          "points": 7,
+          "schema_version": 3,
+          "solution": true,
+          "task": false
+        },
+        "id": "pe6JlrI9_hfx"
+      },
+      "source": [
+        "# Dark_Room.jpg = very dark [The windows are on walls. How does the wall look like?]\n",
+        "# Foggy_Road.jpg = washed out/foggy [How many vehicles do you think there are?]\n",
+        "# Read_the_code.jpg = Dark RGB Barcode [What is hidden in the Barcode?\n",
+        "#                                       Make it scanable, scan it and say something about the hidden message.]\n",
+        "\n",
+        "# Your task is to improve these images using\n",
+        "# contrast stretching, histogram equalization, AHE or CLAHE\n",
+        "# try different combination of parameter settings to see which produces the best result\n",
+        "\n",
+        "### BEGIN SOLUTION\n",
+        "\n",
+        "### END SOLUTION"
+      ],
+      "id": "pe6JlrI9_hfx",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Your answers:\n",
+        "\n",
+        "abc abc abc ... ..."
+      ],
+      "metadata": {
+        "id": "8LG6Oj9nnsZJ"
+      },
+      "id": "8LG6Oj9nnsZJ"
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "n-F76I3KnvC3"
+      },
+      "id": "n-F76I3KnvC3",
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
