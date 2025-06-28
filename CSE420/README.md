@@ -41,6 +41,5 @@
 My suggestion would be that you, should focus on the theory class and try to understand the topics at class if you are unsure about something, ask your faculty to clear out your doubts.
 
 ----
-***'Notes credit goes to one of my friends [Farah Ulfat](https://www.linkedin.com/in/farah-ulfat-55a975292/).  Besides class, her notes also helped me clear out some of my doubts.`***
 
 ---
