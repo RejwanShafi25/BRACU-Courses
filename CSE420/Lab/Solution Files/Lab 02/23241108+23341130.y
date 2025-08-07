@@ -278,7 +278,9 @@ declaration_list : declaration_list COMMA ID
             // you may need to store the variable names to insert them in symbol table here or later
 			
  		  }
- 		  | ID LTHIRD CONST_INT RTHIRD //array
+ 		  | ID LTHIRD CONST_INT RTHIRD //array (only array, array er age onno kichu declare kora nai,)
+           // int x, a[2] -> follow line no 253
+           // int a[2] -> follow line no 281
  		  {
  		  	symbol_info* arr = new symbol_info($1->get_name(), "ID"); 
 			arr->set_as_array(stoi($3->get_name()));
