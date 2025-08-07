@@ -250,7 +250,7 @@ declaration_list : declaration_list COMMA ID
             // you may need to store the variable names to insert them in symbol table here or later
 			
  		  }
- 		  | declaration_list COMMA ID LTHIRD CONST_INT RTHIRD //array after some declaration
+ 		  | declaration_list COMMA ID LTHIRD CONST_INT RTHIRD //array after some declaration for example: int x,y,z, a[2]
  		  {
  		  	symbol_info* arr = new symbol_info($3->get_name(), "ID");
 			arr->set_as_array(stoi($5->get_name()));
