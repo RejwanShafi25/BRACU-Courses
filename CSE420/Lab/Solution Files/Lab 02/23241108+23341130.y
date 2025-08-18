@@ -185,7 +185,7 @@ compound_statement : LCURL
             statements RCURL
             { 
                 outlog<<"At line no: "<<lines<<" compound_statement : LCURL statements RCURL "<<endl<<endl;
-                outlog<<"{\n"+$3->get_name()+"\n}"<<endl<<endl;
+                outlog<<"{\n"+$2->get_name()+"\n}"<<endl<<endl;
 
                 // Print all scope tables before removing scope
                 //outlog << "################################" << endl << endl;
@@ -196,7 +196,7 @@ compound_statement : LCURL
                 outlog<<"Scopetable with ID "<<table->get_current_id()<<" removed"<<endl<<endl;
                 table->exit_scope();
                 
-                $$ = new symbol_info("{\n"+$3->get_name()+"\n}","comp_stmnt");
+                $$ = new symbol_info("{\n"+$2->get_name()+"\n}","comp_stmnt");
             }
             ;
             
